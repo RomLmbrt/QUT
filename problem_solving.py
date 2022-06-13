@@ -26,8 +26,10 @@ def censor(s):
     return r
 
 def fertiliser(an, ap, bn, bp, n, p):
+    
     #Create the matrice that reflects the equation and invert it
     y = np.linalg.inv(np.array([[an, bn], [ap, bp]]))
+    
     #Store the result matrice in result
     result = np.dot(y,np.transpose(np.array([[n,p]])))
     
