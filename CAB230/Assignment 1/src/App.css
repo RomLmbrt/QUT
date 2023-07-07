@@ -1,0 +1,68 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+/* Simple browser reset */
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+/*header and footer*/
+header {
+  background: #fff;
+  color: #fff;
+}
+
+footer {
+  background: #222;
+  text-align: center;
+  color: #d8d8d8;
+}
+
+nav {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+}
+
+nav ul li {
+  color: purple;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 15px;
+  transition: 0.3s ease all;
+}
+
+/* Search Bar */
+.country__title {
+  font-size: 100%;
+  margin: 0;
+  margin-right: 5px;
+  margin-left:0px;
+  font-family: "Merriweather", serif;
+}
+
+div ul {
+  width:100%;
+  display:inline-flex;
+  list-style: none;
+  margin: 0;
+}
+
+/* Icon */
+#icon {
+  display: inline-block;
+  margin: 3px;
+}
+
+#icon img {
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+}
