@@ -1,0 +1,86 @@
+.App {
+  font-family: sans-serif;
+  text-align: left;
+}
+
+/*header and footer*/
+header {
+  background: #fff;
+  color: #fff;
+}
+
+nav {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+}
+
+nav ul li {
+  color: purple;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 15px;
+  transition: 0.3s ease all;
+}
+
+/* Home */
+.hero__title {
+  font-family: "Merriweather", serif;
+  margin-left: 10px;
+}
+
+/* Search Bar */
+.country__title {
+  font-size: 100%;
+  margin: 0;
+  margin-right: 0px;
+  margin-left: 5px;
+  font-family: "Merriweather", serif;
+}
+
+div ul {
+  width: 100%;
+  display: inline-flex;
+  list-style: none;
+  margin: 0;
+}
+
+/* Icon */
+#icon {
+  display: inline-block;
+  margin: 3px;
+}
+
+#icon img {
+  height: 500px;
+  width: 750px;
+  vertical-align: left;
+}
+/* Volcano */
+.volcano {
+  width: 250px;
+  display: inline-flex;
+  margin-left: 0px;
+}
+
+.map {
+  width: 100%;
+  display: inline-flex;
+  margin-left: 5px;
+  margin: 10px;
+}
+
+.all_volcano {
+  display: flex;
+}
+
+.graph {
+  margin-left: 150px;
+  width: 600px;
+  height: 600px;
+}

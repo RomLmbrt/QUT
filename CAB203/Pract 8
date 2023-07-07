@@ -1,0 +1,36 @@
+V = [0,1,2,3,4]
+E=[(0,1),(1,2),(1,3),(2,3),(3,4),(2,4)]
+
+def parents(V,E,u):
+    result =[]
+    for v in V :
+        for e in E : 
+            if (u,v)==e or (v,u)==e:
+                result.append(v)
+    return(result)
+
+def bfs(V,E,u,v):
+    queue = [u]
+    visited = []
+    dist=[0 for i in V]
+    pred=[-1 for i in V]
+    while queue != [] :
+        n = queue.pop(0)
+        visited.append(n)
+        chemin=[]
+        #ajouter parents de n à visiter ds queue
+        for z in parents(V,E,n):
+            if z not in visited:
+                queue.append(z)
+                dist[z]=dist[n]+1
+                pred[z]=n
+                if z==v :
+                    r = v
+                    while r != u :
+                        chemin.append(r)
+                        r = pred[r]
+                    return (chemin[len(chemin)-1])
+        visited.append(n)
+    return("no path from u to v")
+                
+print (bfs(V,E,2,4))
